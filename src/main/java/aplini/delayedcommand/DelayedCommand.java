@@ -40,7 +40,7 @@ public final class DelayedCommand extends JavaPlugin {
         }
 
         // 从毫秒数获取tick
-        long tick = (long) Math.abs(Math.ceil((float) Integer.parseInt(args[1]) / 1000)) * 20;
+        long tick = (long) Math.abs(Math.ceil((float) Integer.parseInt(args[1]) / 1000 * 20));
 
         // 获取指令
         StringBuilder command = new StringBuilder();
