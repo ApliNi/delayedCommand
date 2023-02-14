@@ -1,0 +1,14 @@
+name: DelayedCommand
+version: '${project.version}'
+main: aplini.delayedcommand.DelayedCommand
+
+commands:
+  delayedcommand:
+    description: 延迟执行指令
+    permission: delayedCommand.use
+    aliases: [cdelay]
+
+permissions:
+  delayedCommand.use:
+    description: 使用延迟执行指令功能
+    default: op
